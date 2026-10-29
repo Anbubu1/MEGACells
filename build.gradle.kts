@@ -8,7 +8,7 @@ plugins {
 val modId = "megacells"
 
 base.archivesName = modId
-version = if (System.getenv("GITHUB_REF_TYPE") == "tag") System.getenv("GITHUB_REF_NAME") else "0.0.0"
+version = if (System.getenv("GITHUB_REF_TYPE") == "tag") System.getenv("GITHUB_REF_NAME") else "4.11.0"
 group = "gripe.90"
 
 java {
@@ -88,7 +88,7 @@ neoForge {
         minecraftVersion = core.versions.minecraft.get()
         mappingsVersion = core.versions.parchment.get()
     }
-    
+
     mods {
         create(modId) {
             sourceSet(sourceSets.main.get())
